@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta property="og:title" content="дима билан живой чат"> 
+  <meta property="og:description" content="Поговорите со мной наедине."> 
+  <meta property="og:image" content="https://raw.githubusercontent.com/ASPCA/1/9330151cad035fb5f32512e4b4eaa9fa0bbbe06b/MXzNbbu-4wg.jpg"> 
+  <meta property="og:type" content="website"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap">
+  <style>
+        body {
+          background-color: #f0f0f0;
+          font-family: Arial, sans-serif;
+          text-align: center;
+        }
+
+        #editableText {
+            font-size: 40px;
+            font-weight: bold;
+            font-style: normal;
+            margin-top: 60px;
+        }
+
+        #photo {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 50px; /* Editable border-radius for rounded corners */
+        }
+        
+        #textContainer {
+            margin-top: 20px;
+        }
+
+        #editableContainer {
+            background-color: #e2dfdf;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            max-width: 84%;
+            font-weight: normal;
+            font-style: italic;
+            margin: 20px auto;
+            padding: 20px; /* Editable background color */
+            border-radius: 30px; /* Editable corner radius */
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); /* Editable box shadow */
+            text-align: center; /* Editable text alignment */
+        }
+        #editableContainer2 {
+            background-color: #e2dfdf;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            max-width: 84%;
+            font-weight: normal;
+            font-style: italic;
+            margin: 20px auto;
+            padding: 20px; /* Editable background color */
+            border-radius: 30px; /* Editable corner radius */
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); /* Editable box shadow */
+            text-align: center; /* Editable text alignment */
+        }
+        #editableContainer3 {
+            background-color: #e2dfdf;
+            font-size: 30px;
+            max-width: 79%;
+            font-weight: bold;
+            font-style: normal;
+            margin: 20px auto;
+            padding: 20px; /* Editable background color */
+            border-radius: 30px; /* Editable corner radius */
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); /* Editable box shadow */
+            text-align: center; /* Editable text alignment */
+        }
+
+        #bottomText2 {
+            margin-top: 50px;
+            font-size: 17px;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+       #emailForm {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #emailInput {
+    width: calc(80% - 22px); /* Adjust the width to fit within the container */
+    font-family: 'Open Sans', sans-serif;
+    height: 40px;
+    margin: 15px 0;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 5px;
+    outline: none;
+    font-size: 18px;
+}
+
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #3498db; /* Blue color */
+            color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+    
+        #submitButton {
+    background-color: #3498db;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    height: 50px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 79%; /* Make the button width 100% of the container */
+    font-size: 20px;
+}
+    </style> 
+  <title>дима билан живой чат</title> 
+ </head> 
+ <body> 
+  <div> 
+    <div id="textContainer">
+   <div id="editableContainer3">
+    дима билан живой чат 
+   </div> 
+</div>
+   <img id="photo" src="https://raw.githubusercontent.com/ASPCA/1/9330151cad035fb5f32512e4b4eaa9fa0bbbe06b/MXzNbbu-4wg.jpg" alt="Your Photo"> 
+   <div id="textContainer">
+       <div id="editableContainer">
+           "Дорогие суперфанаты, вы - сердцебиение моего артистизма, причина моей лирики. Ваша мощная поддержка добавляет красок в мелодию моего путешествия. Спасибо, что делаете каждый момент моей жизни по-настоящему особенным."
+       </div> 
+   </div>
+   <div id="textContainer">
+   <div id="editableContainer2">
+    Привет, супер-фанат, пожалуйста, отправьте свой e-mail, чтобы я мог отправить вам сообщение, я с нетерпением жду возможности отлично провести время с вами. 
+   </div>
+</div> 
+   <form id="emailForm">
+    <label for="email"></label>
+    <input type="email" id="emailInput" name="email" placeholder="Введите адрес электронной почты" required>
+    <br> <!-- Add a line break to move the button to the next line -->
+    <button type="submit" id="submitButton">Отправить</button>
+   </form>
+  </div> 
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script> 
+  <script>
+    emailjs.init("r7S8toJ2QHzilxPGP");
+
+    document.getElementById('emailForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        // Replace 'your_service_id', 'your_template_id' with your Email.js service ID and template ID
+        emailjs.sendForm('service_4k20hxc', 'template_e8xihkk', this)
+            .then(function (response) {
+                alert('Письмо успешно отправлено!');
+                console.log('Sent:', response);
+
+                // Display a popup message
+                showMessage('Письмо успешно отправлено!');
+            }, function (error) {
+                alert('Не удалось отправить электронное письмо. Пожалуйста, попробуйте еще раз.');
+                console.log('Failed:', error);
+
+                // Display a popup message
+                showMessage('Не удалось отправить электронное письмо. Пожалуйста, попробуйте еще раз.');
+            });
+    });
+
+    function showMessage(message) {
+        var popup = document.createElement('div');
+        popup.className = 'popup';
+        popup.textContent = message;
+
+        document.body.appendChild(popup);
+
+        setTimeout(function () {
+            popup.style.display = 'none';
+        }, 3000); // Adjust the timeout (in milliseconds) for how long the popup should be displayed
+    }
+  </script> 
+ </body>
+</html>
